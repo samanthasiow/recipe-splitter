@@ -1,0 +1,25 @@
+#recipe {
+  height: 50vh;
+  width: 25vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-container {
+  margin: 50px;
+}
+
+.result-header {
+  margin-top: 0px;
+}
+
+.recipe-radio {
+  border: none;
+}
+
+.recipe-split-selection {
+  margin-top: 50px;
+}

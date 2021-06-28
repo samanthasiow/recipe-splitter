@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="./splitter.js"></script>
+        <link rel="stylesheet" href="./splitter.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="inner-container">
+                <form id="recipe-form">
+                    <label for="recipe-input">Recipe here:</label><br>
+                    <textarea type="text" id="recipe" name="recipe-input"></textarea><br>
+                    <div class="recipe-split-selection">
+                        <label for="splitby">Split by:</label>
+                        <fieldset id="splitby" class="recipe-radio">
+                            <input type="radio" id="0.1x" name="splitby" value="0.1">0.1x<br>
+                            <input type="radio" id="0.25x" name="splitby" value="0.25">0.25x<br>
+                            <input type="radio" id="0.5x" name="splitby" value="0.5">0.5x<br>
+                            <input type="radio" id="1x" name="splitby" value="1" checked>1x<br>
+                            <input type="radio" id="1.5x" name="splitby" value="1.5">1.5x<br>
+                            <input type="radio" id="2x" name="splitby" value="2">2x<br>
+                            <input type="radio" id="5x" name="splitby" value="5">5x<br>
+                            <input type="radio" id="10x" name="splitby" value="10">10x<br>
+                        </fieldset>
+                    </div>
+                    <input type="submit" value="Submit" id="recipe-form-submit">
+                </form>
+            </div>
+            <div id="recipe-result" class="inner-container">
+                <p class="result-header"><b>Recipe Result:</b></p>
+                <p id="result-contents"></p>
+
+            </div>
+        </div>
+
+    </body>
+</html>
